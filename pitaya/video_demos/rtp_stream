@@ -1,0 +1,1 @@
+gst-launch-1.0 v4l2src device=/dev/video0 ! videoconvert ! videoscale ! videorate ! video/x-raw,width=320,height=240,format=I420,framerate=25/1  !  rtpvrawpay    ! udpsink host=10.42.0.1  port=5001 sync=false async=false -v

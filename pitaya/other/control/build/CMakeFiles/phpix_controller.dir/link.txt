@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/phpix_controller.dir/phpix.c.o CMakeFiles/phpix_controller.dir/data.c.o  -o phpix_controller 

@@ -1,0 +1,90 @@
+
+1. nainstalovat vivado + petalinu
+	UG 976
+https://www.xilinx.com/support/documentation/sw_manuals/petalinux2014_2/ug976-petalinux-installation.pdf
+
+2. doinstalovat balicky
+3. 
+./petalinux-v2020.2-final-installer.run --dir /home/zz/peta --platform "arm"
+
+4.
+source peta/settings.sh
+
+=====================
+sdk installed, create bootable image
+
+1. 
+https://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_4/ug1165-zynq-embedded-design-tutorial.pdf
+
+short guide:
+https://medium.com/developments-and-implementations-on-zynq-7000-ap/install-ubuntu-16-04-lts-on-zynq-zc702-using-petalinux-2016-4-e1da902eaff7
+
+2. mdio podle schematicu stemlab125-14
+	problem - vivado linux - tecka ve frekvenci - zaokrouhluje se
+		workaround - 
+		export LANG=en_US
+		export LC_ALL=en_US.UTF-8
+
+3. create petalinux image
+	source peta/settings.sh
+
+4. create hw description
+
+	zynq processing system
+	used:
+	spi0 spi1 i2c0 uart0 uart1 gpio sd0 usb0 enet0 ttc
+
+	PS-PL:
+		uart baudrate
+		clk0 reset
+		hp slave axi hp0
+
+	Peripheral IO:
+
+		QSPI 	1..6
+		 single SS 4bit
+
+		ENET0	16..27 + MDIO
+
+		... atd atd...
+
+petalinux-create --type project --template zynq --name test_bootcd test_boot
+cd test_boot
+petalinux-config --get-hw-description=~/phpix/hw_linux/exported_hw
+
+    Go to Subsystem AUTO Hardware Settings -> Advanced bootable images storage Settings -> boot image settings and set ‘image storage media’ option to ‘primary sd’
+    Go to Subsystem AUTO Hardware Settings -> Advanced bootable images storage Settings -> kernel image settings and set ‘image storage media’ option to ‘primary sd’
+    Go to Subsystem AUTO Hardware Settings -> Advanced bootable images storage Settings -> dtb image settings and set ‘image storage media’ option to ‘primary sd’
+    Go to Image Packaging Configurations and set ‘Root filesystem type’ option to ‘SD card’
+
+petalinux_build
+
+* copy bitfile into image folder
+cp ~/phpix/hw_linux/exported_hw/system.bit images/
+
+petalinux-package --boot --format BIN --fsbl ./images/linux/zynq_fsbl.elf --fpga ~/phpix/hw_linux/exported_hw/system.bit --u-boot --force
+
+
+rm -rf /media/zz/BOOT/*
+cp -r  images/linux/* /media/zz/BOOT/
+
+copying to rootf:
+sudo tar xfvp ./*-*-*-armhf-*/armhf-rootfs-*.tar -C /media/rootfs/sync
+sudo chown root:root /media/rootfs/
+sudo chmod 755 /media/rootfs/
+
+Device Driver -->
+Multimedia support -->
+Cameras/video grabbers support -->
+Media test drivers -->
+Virtual Video Driver.
+
+
+receiver must be started before source!!!
+ffmpeg -i /dev/video0 -c:v rawvideo -f avi udp://127.0.0.1:1130?ttl=1
+ffplay udp://127.0.0.1:1130
+
+po kompilaci prekopirovat /lib/modules/
+a spustit depmod -a
+modprobe vivid..
+rmmod

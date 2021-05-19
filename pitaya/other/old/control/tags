@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDR_CONTROL	control.h	15;"	d
+ADDR_DATA	control.h	14;"	d
+ADDR_GLOBAL_CONFIG	control.h	12;"	d
+ADDR_LOCAL_CONFIG	control.h	13;"	d
+BSY	control.h	/^			uint32_t BSY:1;		\/**< RO Busy - operation in progress*\/$/;"	m	struct:Control::__anon1::__anon2
+CH_EN	control.h	/^			uint16_t CH_EN:1;$/;"	m	struct:Local_config::__anon3::__anon4
+CR	control.h	/^		uint32_t CR;	\/**< WORD access to Control\/Status Register*\/$/;"	m	union:Control::__anon1
+Control	control.h	/^struct Control{$/;"	s
+DN	control.h	/^			uint32_t DN:1;		\/**< RO Done - operation finished - not implemented*\/$/;"	m	struct:Control::__anon1::__anon2
+FDAC	control.h	/^			uint16_t FDAC:5;$/;"	m	struct:Local_config::__anon3::__anon4
+GAIN	control.h	/^			uint16_t GAIN:1;$/;"	m	struct:Local_config::__anon3::__anon4
+GPIO	control.h	/^	uint32_t GPIO;		\/**< Debug signals. GPIO 7:0 mapped to LEDs(pitaya)*\/$/;"	m	struct:Control
+Global_config	control.h	/^struct Global_config{$/;"	s
+INIT	control.h	/^			uint32_t INIT:1;	\/**< WO Optional Init after power-up *\/$/;"	m	struct:Control::__anon1::__anon2
+INJECT	control.h	/^			uint16_t INJECT:1;$/;"	m	struct:Local_config::__anon3::__anon4
+Local_config	control.h	/^struct Local_config{$/;"	s
+MODE	control.h	/^			uint16_t MODE:2;$/;"	m	struct:Local_config::__anon3::__anon4
+OUT_EN	control.h	/^			uint16_t OUT_EN:1; \/**<Analog out, default off*\/$/;"	m	struct:Local_config::__anon3::__anon4
+PAGES_TO_OPEN	control.h	17;"	d
+PHC	control.h	/^	uint32_t PHC;		\/**< PhPix Chips count. 8 chips per scale. Sets starting address for BRAM*\/$/;"	m	struct:Control
+PRE	control.h	/^	uint32_t PRE;		\/**< Prescaler. Fout = Fin\/(PRE + 1).*\/$/;"	m	struct:Control
+Phpix	control.h	/^struct Phpix{$/;"	s
+REG	control.h	/^		uint16_t REG; \/**access to whole register as byte*\/$/;"	m	union:Local_config::__anon3
+SHP	control.h	/^	uint32_t SHP;		\/**< Shutter period in CLKs (after prescaler)*\/$/;"	m	struct:Control
+ST	control.h	/^			uint32_t ST:1;		\/**< WO Start Bit *\/$/;"	m	struct:Control::__anon1::__anon2
+TDAC	control.h	/^			uint16_t TDAC:5;$/;"	m	struct:Local_config::__anon3::__anon4
+__CONTROL_H__	control.h	2;"	d
+__LFSR_H__	lfsr.h	2;"	d
+channel	control.h	/^	struct Local_config channel[32];$/;"	m	struct:Phpix	typeref:struct:Phpix::Local_config
+create_lfsr_lut	lfsr.c	/^void create_lfsr_lut(uint16_t * empty_list_8192)$/;"	f
+global	control.h	/^	struct Global_config global ;$/;"	m	struct:Phpix	typeref:struct:Phpix::Global_config
+lfsr_decode	lfsr.c	/^int lfsr_decode(uint16_t value, uint16_t * lut)$/;"	f
+magic0	control.h	/^	uint32_t magic0; \/**< lsb in memory is last transmitted *\/$/;"	m	struct:Global_config
+magic1	control.h	/^	uint32_t magic1;$/;"	m	struct:Global_config
+magic2	control.h	/^	uint32_t magic2;$/;"	m	struct:Global_config
+magic3	control.h	/^	uint32_t magic3; \/**< msb in memory is first transmitted*\/$/;"	m	struct:Global_config
+main	control.c	/^int main(int argc, char** argv)$/;"	f
+reserved	control.h	/^			uint32_t reserved:28;$/;"	m	struct:Control::__anon1::__anon2

@@ -1,0 +1,1 @@
+opbasm -6 -m 1024 -s 64    main.psm

@@ -1,0 +1,880 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 18 20:48:39 2021
+# Process ID: 32992
+# Current directory: /home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1
+# Command line: vivado -log blok_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source blok_wrapper.tcl -notrace
+# Log file: /home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1/blok_wrapper.vdi
+# Journal file: /home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source blok_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+Command: link_design -top blok_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_axi_bram_ctrl_0_0/blok_axi_bram_ctrl_0_0.dcp' for cell 'blok_i/axi_bram_ctrl_cfg'
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_axi_bram_ctrl_1_0/blok_axi_bram_ctrl_1_0.dcp' for cell 'blok_i/axi_bram_ctrl_ctl'
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_axi_bram_ctrl_0_1/blok_axi_bram_ctrl_0_1.dcp' for cell 'blok_i/axi_bram_ctrl_dat'
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_blk_mem_gen_0_0/blok_blk_mem_gen_0_0.dcp' for cell 'blok_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_blk_mem_gen_0_1/blok_blk_mem_gen_0_1.dcp' for cell 'blok_i/blk_mem_gen_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_controller_0_0/blok_controller_0_0.dcp' for cell 'blok_i/controller_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_decoder_0_0/blok_decoder_0_0.dcp' for cell 'blok_i/decoder_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_processing_system7_0_0/blok_processing_system7_0_0.dcp' for cell 'blok_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_rst_ps7_0_50M_0/blok_rst_ps7_0_50M_0.dcp' for cell 'blok_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_xbar_0/blok_xbar_0.dcp' for cell 'blok_i/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_auto_pc_0/blok_auto_pc_0.dcp' for cell 'blok_i/axi_interconnect_0/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2451.766 ; gain = 0.000 ; free physical = 2591 ; free virtual = 6810
+INFO: [Netlist 29-17] Analyzing 2019 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_processing_system7_0_0/blok_processing_system7_0_0.xdc] for cell 'blok_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_processing_system7_0_0/blok_processing_system7_0_0.xdc] for cell 'blok_i/processing_system7_0/inst'
+Parsing XDC File [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_rst_ps7_0_50M_0/blok_rst_ps7_0_50M_0_board.xdc] for cell 'blok_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_rst_ps7_0_50M_0/blok_rst_ps7_0_50M_0_board.xdc] for cell 'blok_i/rst_ps7_0_50M/U0'
+Parsing XDC File [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_rst_ps7_0_50M_0/blok_rst_ps7_0_50M_0.xdc] for cell 'blok_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.gen/sources_1/bd/blok/ip/blok_rst_ps7_0_50M_0/blok_rst_ps7_0_50M_0.xdc] for cell 'blok_i/rst_ps7_0_50M/U0'
+Parsing XDC File [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc]
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_i[*]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_i[1]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_i[0]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_uart_rx_i'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_uart_tx_o'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_uart_rx_i'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_uart_tx_o'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_uart_rx_i'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_SCK_i'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_D_o'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_D_o'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_SCK_i'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_D_o'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PHpix_D_o'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[3]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[0]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[6]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[7]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[11]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[10]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_WE[2]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_WE[3]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[1]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[12]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[2]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[4]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[5]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[8]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_ADDR[9]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_WE[0]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_CLK'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_WE[1]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[3]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[0]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[1]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[2]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[25]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[23]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[24]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[21]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[22]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[19]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[20]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[4]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[8]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[14]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[15]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[16]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[17]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[18]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[6]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[5]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[31]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[29]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[30]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[27]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[28]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[7]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[9]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[10]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[11]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[12]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[13]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_DIN[26]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/axi_bram_ctrl_2_BRAM_PORTA_EN'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/controller_0/inst/fsm_rx_bit_prt_reg_n_0_[0]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/controller_0/inst/fsm_rx_bit_prt_reg_n_0_[2]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/controller_0/inst/fsm_rx_bit_prt_reg_n_0_[3]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/controller_0/inst/fsm_rx_bit_prt_reg_n_0_[4]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/controller_0/inst/fsm_rx_bit_prt_reg_n_0_[1]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/controller_0/datmem_addr_o[0]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'blok_i/controller_0/cfgmem_addr_o[0]'. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.srcs/constrs_1/new/pinout.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'blok_wrapper'...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2507.793 ; gain = 0.000 ; free physical = 2485 ; free virtual = 6705
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+21 Infos, 72 Warnings, 72 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2507.793 ; gain = 56.027 ; free physical = 2485 ; free virtual = 6705
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.88 . Memory (MB): peak = 2507.793 ; gain = 0.000 ; free physical = 2478 ; free virtual = 6698
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1524d34eb
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2606.566 ; gain = 98.773 ; free physical = 2093 ; free virtual = 6327
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 11 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 17bd0a5b5
+
+Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2777.504 ; gain = 0.000 ; free physical = 1928 ; free virtual = 6163
+INFO: [Opt 31-389] Phase Retarget created 51 cells and removed 85 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 148d623bd
+
+Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.43 . Memory (MB): peak = 2777.504 ; gain = 0.000 ; free physical = 1928 ; free virtual = 6163
+INFO: [Opt 31-389] Phase Constant propagation created 53 cells and removed 163 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1bb33c87c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.66 . Memory (MB): peak = 2777.504 ; gain = 0.000 ; free physical = 1928 ; free virtual = 6162
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 151 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG blok_i/processing_system7_0/inst/FCLK_CLK0_BUFG_inst to drive 1274 load(s) on clock net blok_i/processing_system7_0/inst/FCLK_CLK0_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 21d2ad422
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.76 . Memory (MB): peak = 2777.504 ; gain = 0.000 ; free physical = 1928 ; free virtual = 6162
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 21d2ad422
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.77 . Memory (MB): peak = 2777.504 ; gain = 0.000 ; free physical = 1928 ; free virtual = 6162
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 21d2ad422
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.80 . Memory (MB): peak = 2777.504 ; gain = 0.000 ; free physical = 1928 ; free virtual = 6162
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              51  |              85  |                                              0  |
+|  Constant propagation         |              53  |             163  |                                              0  |
+|  Sweep                        |               0  |             151  |                                              0  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2777.504 ; gain = 0.000 ; free physical = 1928 ; free virtual = 6162
+Ending Logic Optimization Task | Checksum: 144b099ad
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.93 . Memory (MB): peak = 2777.504 ; gain = 0.000 ; free physical = 1928 ; free virtual = 6162
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 8 BRAM(s) out of a total of 16 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 8 WE to EN ports
+Number of BRAM Ports augmented: 8 newly gated: 8 Total Ports: 32
+Ending PowerOpt Patch Enables Task | Checksum: 15536c8d2
+
+Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1903 ; free virtual = 6142
+Ending Power Optimization Task | Checksum: 15536c8d2
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3068.410 ; gain = 290.906 ; free physical = 1910 ; free virtual = 6148
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 15536c8d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1910 ; free virtual = 6148
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1910 ; free virtual = 6148
+Ending Netlist Obfuscation Task | Checksum: 1b551c2a3
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1910 ; free virtual = 6148
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 72 Warnings, 72 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 3068.410 ; gain = 560.617 ; free physical = 1910 ; free virtual = 6148
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1903 ; free virtual = 6144
+INFO: [Common 17-1381] The checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1/blok_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file blok_wrapper_drc_opted.rpt -pb blok_wrapper_drc_opted.pb -rpx blok_wrapper_drc_opted.rpx
+Command: report_drc -file blok_wrapper_drc_opted.rpt -pb blok_wrapper_drc_opted.pb -rpx blok_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1/blok_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1834 ; free virtual = 6077
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: fd0d2493
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1834 ; free virtual = 6077
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1834 ; free virtual = 6077
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 7050e8a7
+
+Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.46 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1862 ; free virtual = 6108
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: fc0b3ecb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1869 ; free virtual = 6115
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: fc0b3ecb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1869 ; free virtual = 6115
+Phase 1 Placer Initialization | Checksum: fc0b3ecb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1869 ; free virtual = 6115
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: ce81b5fd
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1860 ; free virtual = 6108
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: b606bebf
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1862 ; free virtual = 6109
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 82 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 32 nets or cells. Created 0 new cell, deleted 32 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1849 ; free virtual = 6099
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             32  |                    32  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             32  |                    32  |           0  |           3  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 1f3e0cf72
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:05 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1849 ; free virtual = 6099
+Phase 2.3 Global Placement Core | Checksum: 1e19c4afd
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:05 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1848 ; free virtual = 6098
+Phase 2 Global Placement | Checksum: 1e19c4afd
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:05 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1849 ; free virtual = 6099
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 20e428fc1
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1848 ; free virtual = 6099
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2a2d83e83
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:06 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1848 ; free virtual = 6098
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2b739e603
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:06 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1848 ; free virtual = 6098
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1fffe4d0a
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:06 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1848 ; free virtual = 6098
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 2006c8dae
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:08 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1845 ; free virtual = 6096
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1a82ada36
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:08 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1845 ; free virtual = 6096
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 13ec36432
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:08 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1845 ; free virtual = 6096
+Phase 3 Detail Placement | Checksum: 13ec36432
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:08 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1845 ; free virtual = 6096
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 150c5d1c9
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=12.032 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1ea926baa
+
+Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1840 ; free virtual = 6091
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 17ae4258f
+
+Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1836 ; free virtual = 6087
+Phase 4.1.1.1 BUFG Insertion | Checksum: 150c5d1c9
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:09 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1832 ; free virtual = 6083
+INFO: [Place 30-746] Post Placement Timing Summary WNS=12.032. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:09 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1831 ; free virtual = 6082
+Phase 4.1 Post Commit Optimization | Checksum: 128fbbc53
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:09 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1830 ; free virtual = 6081
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 128fbbc53
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:09 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1830 ; free virtual = 6081
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 128fbbc53
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:09 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1830 ; free virtual = 6081
+Phase 4.3 Placer Reporting | Checksum: 128fbbc53
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:09 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1830 ; free virtual = 6081
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1830 ; free virtual = 6081
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:09 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1830 ; free virtual = 6081
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 16bd67a20
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:10 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1830 ; free virtual = 6081
+Ending Placer Task | Checksum: 1057a454c
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:10 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1830 ; free virtual = 6081
+INFO: [Common 17-83] Releasing license: Implementation
+81 Infos, 72 Warnings, 72 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:10 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1838 ; free virtual = 6089
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.32 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1816 ; free virtual = 6078
+INFO: [Common 17-1381] The checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1/blok_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file blok_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1825 ; free virtual = 6079
+INFO: [runtcl-4] Executing : report_utilization -file blok_wrapper_utilization_placed.rpt -pb blok_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file blok_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1833 ; free virtual = 6087
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+90 Infos, 72 Warnings, 72 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.36 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1782 ; free virtual = 6046
+INFO: [Common 17-1381] The checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1/blok_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 1e78042f ConstDB: 0 ShapeSum: e702411d RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 14c832ba0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1728 ; free virtual = 5986
+Post Restoration Checksum: NetGraph: 8fc3567a NumContArr: bcbfd526 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 14c832ba0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1729 ; free virtual = 5987
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 14c832ba0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1697 ; free virtual = 5955
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 14c832ba0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1697 ; free virtual = 5955
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 124385814
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1685 ; free virtual = 5945
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=12.111 | TNS=0.000  | WHS=-0.355 | THS=-50.714|
+
+Phase 2 Router Initialization | Checksum: 18050ffe1
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1684 ; free virtual = 5943
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 4155
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 4155
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 18050ffe1
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1684 ; free virtual = 5943
+Phase 3 Initial Routing | Checksum: 19e3b6396
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1680 ; free virtual = 5939
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2496
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=8.234  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: ae17ae7a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1679 ; free virtual = 5938
+Phase 4 Rip-up And Reroute | Checksum: ae17ae7a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1679 ; free virtual = 5938
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: fc665a95
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1679 ; free virtual = 5938
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=8.234  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: fc665a95
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1679 ; free virtual = 5938
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: fc665a95
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1679 ; free virtual = 5938
+Phase 5 Delay and Skew Optimization | Checksum: fc665a95
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1679 ; free virtual = 5938
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: c1ab50bd
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1679 ; free virtual = 5938
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=8.234  | TNS=0.000  | WHS=0.034  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 9b70087c
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1679 ; free virtual = 5938
+Phase 6 Post Hold Fix | Checksum: 9b70087c
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1679 ; free virtual = 5938
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.75099 %
+  Global Horizontal Routing Utilization  = 3.41843 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 182039c0e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1679 ; free virtual = 5938
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 182039c0e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1677 ; free virtual = 5936
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 15b32b22d
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1677 ; free virtual = 5936
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=8.234  | TNS=0.000  | WHS=0.034  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 15b32b22d
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1677 ; free virtual = 5936
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1712 ; free virtual = 5971
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+105 Infos, 72 Warnings, 72 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:16 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1712 ; free virtual = 5971
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.36 . Memory (MB): peak = 3068.410 ; gain = 0.000 ; free physical = 1691 ; free virtual = 5963
+INFO: [Common 17-1381] The checkpoint '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1/blok_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file blok_wrapper_drc_routed.rpt -pb blok_wrapper_drc_routed.pb -rpx blok_wrapper_drc_routed.rpx
+Command: report_drc -file blok_wrapper_drc_routed.rpt -pb blok_wrapper_drc_routed.pb -rpx blok_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1/blok_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file blok_wrapper_methodology_drc_routed.rpt -pb blok_wrapper_methodology_drc_routed.pb -rpx blok_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file blok_wrapper_methodology_drc_routed.rpt -pb blok_wrapper_methodology_drc_routed.pb -rpx blok_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1/blok_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file blok_wrapper_power_routed.rpt -pb blok_wrapper_power_summary_routed.pb -rpx blok_wrapper_power_routed.rpx
+Command: report_power -file blok_wrapper_power_routed.rpt -pb blok_wrapper_power_summary_routed.pb -rpx blok_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+117 Infos, 72 Warnings, 72 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file blok_wrapper_route_status.rpt -pb blok_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file blok_wrapper_timing_summary_routed.rpt -pb blok_wrapper_timing_summary_routed.pb -rpx blok_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file blok_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file blok_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file blok_wrapper_bus_skew_routed.rpt -pb blok_wrapper_bus_skew_routed.pb -rpx blok_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force blok_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 1 net(s) have no routable loads. The problem bus(es) and/or net(s) are blok_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[7].ram.r/ENB_dly_D.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Overwriting "TIMESTAMP" with "92AB4C89" for option USR_ACCESS
+TIMESTAMP = Tue May 18 20:50:09 2021
+
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./blok_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] '/home/zz/phpix/phpix-vivado-peta/hw_linux/clean_hw/clean_hw.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue May 18 20:50:16 2021. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3360.070 ; gain = 206.992 ; free physical = 1652 ; free virtual = 5927
+INFO: [Common 17-206] Exiting Vivado at Tue May 18 20:50:16 2021...

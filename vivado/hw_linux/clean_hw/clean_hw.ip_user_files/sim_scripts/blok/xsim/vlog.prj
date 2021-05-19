@@ -1,0 +1,12 @@
+verilog xil_defaultlib --include "/opt/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../clean_hw.gen/sources_1/bd/blok/ipshared/ec67/hdl" --include "../../../../clean_hw.gen/sources_1/bd/blok/ipshared/34f8/hdl" \
+"../../../bd/blok/ip/blok_processing_system7_0_0/sim/blok_processing_system7_0_0.v" \
+"../../../bd/blok/ip/blok_xbar_0/sim/blok_xbar_0.v" \
+"../../../bd/blok/ip/blok_blk_mem_gen_0_0/sim/blok_blk_mem_gen_0_0.v" \
+"../../../bd/blok/ip/blok_blk_mem_gen_0_1/sim/blok_blk_mem_gen_0_1.v" \
+"../../../bd/blok/ip/blok_controller_0_0/sim/blok_controller_0_0.v" \
+"../../../bd/blok/ip/blok_auto_pc_0/sim/blok_auto_pc_0.v" \
+"../../../bd/blok/sim/blok.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

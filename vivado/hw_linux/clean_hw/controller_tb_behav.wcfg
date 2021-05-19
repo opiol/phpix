@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="controller_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="controller_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="22696167fs"></ZoomStartTime>
+      <ZoomEndTime time="23739168fs"></ZoomEndTime>
+      <Cursor1Time time="22870000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="313"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="64" />
+   <wvobject type="logic" fp_name="/controller_tb/uut/cfgmem_clk_o">
+      <obj_property name="ElementShortName">cfgmem_clk_o</obj_property>
+      <obj_property name="ObjectShortName">cfgmem_clk_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/cfgmem_rst_o">
+      <obj_property name="ElementShortName">cfgmem_rst_o</obj_property>
+      <obj_property name="ObjectShortName">cfgmem_rst_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/cfgmem_data_i">
+      <obj_property name="ElementShortName">cfgmem_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cfgmem_data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/cfgmem_data_o">
+      <obj_property name="ElementShortName">cfgmem_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cfgmem_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/cfgmem_ena_o">
+      <obj_property name="ElementShortName">cfgmem_ena_o</obj_property>
+      <obj_property name="ObjectShortName">cfgmem_ena_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/cfgmem_wea_o">
+      <obj_property name="ElementShortName">cfgmem_wea_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cfgmem_wea_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/cfgmem_addr_o">
+      <obj_property name="ElementShortName">cfgmem_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cfgmem_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/datmem_clk_o">
+      <obj_property name="ElementShortName">datmem_clk_o</obj_property>
+      <obj_property name="ObjectShortName">datmem_clk_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/datmem_rst_o">
+      <obj_property name="ElementShortName">datmem_rst_o</obj_property>
+      <obj_property name="ObjectShortName">datmem_rst_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/datmem_data_i">
+      <obj_property name="ElementShortName">datmem_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datmem_data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/datmem_data_o">
+      <obj_property name="ElementShortName">datmem_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datmem_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/datmem_ena_o">
+      <obj_property name="ElementShortName">datmem_ena_o</obj_property>
+      <obj_property name="ObjectShortName">datmem_ena_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/datmem_wea_o">
+      <obj_property name="ElementShortName">datmem_wea_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">datmem_wea_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/datmem_addr_o">
+      <obj_property name="ElementShortName">datmem_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">datmem_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/ctl_clk_i">
+      <obj_property name="ElementShortName">ctl_clk_i</obj_property>
+      <obj_property name="ObjectShortName">ctl_clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/ctl_rst_i">
+      <obj_property name="ElementShortName">ctl_rst_i</obj_property>
+      <obj_property name="ObjectShortName">ctl_rst_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/ctl_data_i">
+      <obj_property name="ElementShortName">ctl_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ctl_data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/ctl_data_o">
+      <obj_property name="ElementShortName">ctl_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ctl_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/ctl_ena_i">
+      <obj_property name="ElementShortName">ctl_ena_i</obj_property>
+      <obj_property name="ObjectShortName">ctl_ena_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/ctl_wea_i">
+      <obj_property name="ElementShortName">ctl_wea_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ctl_wea_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/ctl_addr_i">
+      <obj_property name="ElementShortName">ctl_addr_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ctl_addr_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/mosi_o">
+      <obj_property name="ElementShortName">mosi_o</obj_property>
+      <obj_property name="ObjectShortName">mosi_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/miso_i">
+      <obj_property name="ElementShortName">miso_i</obj_property>
+      <obj_property name="ObjectShortName">miso_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/sck_o">
+      <obj_property name="ElementShortName">sck_o</obj_property>
+      <obj_property name="ObjectShortName">sck_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/cs_o">
+      <obj_property name="ElementShortName">cs_o</obj_property>
+      <obj_property name="ObjectShortName">cs_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/leds_o">
+      <obj_property name="ElementShortName">leds_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">leds_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/clk_en">
+      <obj_property name="ElementShortName">clk_en</obj_property>
+      <obj_property name="ObjectShortName">clk_en</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/controller_tb/uut/clk_counter">
+      <obj_property name="ElementShortName">clk_counter</obj_property>
+      <obj_property name="ObjectShortName">clk_counter</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/ctl_reg_downcounter">
+      <obj_property name="ElementShortName">ctl_reg_downcounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ctl_reg_downcounter[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/ctl_reg_bits_to_write">
+      <obj_property name="ElementShortName">ctl_reg_bits_to_write[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ctl_reg_bits_to_write[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/ctl_reg_control">
+      <obj_property name="ElementShortName">ctl_reg_control[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ctl_reg_control[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/ctl_reg_options">
+      <obj_property name="ElementShortName">ctl_reg_options[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ctl_reg_options[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/sync_reg_control">
+      <obj_property name="ElementShortName">sync_reg_control[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sync_reg_control[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/clk_update_counter">
+      <obj_property name="ElementShortName">clk_update_counter</obj_property>
+      <obj_property name="ObjectShortName">clk_update_counter</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/ctl_reg_control_event">
+      <obj_property name="ElementShortName">ctl_reg_control_event</obj_property>
+      <obj_property name="ObjectShortName">ctl_reg_control_event</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/controller_tb/uut/fsm_State">
+      <obj_property name="ElementShortName">fsm_State</obj_property>
+      <obj_property name="ObjectShortName">fsm_State</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/fsm_start_ack">
+      <obj_property name="ElementShortName">fsm_start_ack</obj_property>
+      <obj_property name="ObjectShortName">fsm_start_ack</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/mosidata">
+      <obj_property name="ElementShortName">mosidata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mosidata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/mosiaddress">
+      <obj_property name="ElementShortName">mosiaddress[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mosiaddress[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/mosibitptr">
+      <obj_property name="ElementShortName">mosibitptr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mosibitptr[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/misodata">
+      <obj_property name="ElementShortName">misodata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">misodata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/misobitptr">
+      <obj_property name="ElementShortName">misobitptr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">misobitptr[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/ipc_data">
+      <obj_property name="ElementShortName">ipc_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ipc_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/ipc_write">
+      <obj_property name="ElementShortName">ipc_write</obj_property>
+      <obj_property name="ObjectShortName">ipc_write</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/ipc_convert">
+      <obj_property name="ElementShortName">ipc_convert</obj_property>
+      <obj_property name="ObjectShortName">ipc_convert</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/ipc_reset">
+      <obj_property name="ElementShortName">ipc_reset</obj_property>
+      <obj_property name="ObjectShortName">ipc_reset</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/controller_tb/uut/writer_state">
+      <obj_property name="ElementShortName">writer_state</obj_property>
+      <obj_property name="ObjectShortName">writer_state</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/writer_address">
+      <obj_property name="ElementShortName">writer_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">writer_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/fsm_bits_sent">
+      <obj_property name="ElementShortName">fsm_bits_sent[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fsm_bits_sent[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/fsm_skip_counter">
+      <obj_property name="ElementShortName">fsm_skip_counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fsm_skip_counter[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/decoded_word">
+      <obj_property name="ElementShortName">decoded_word[31:0]</obj_property>
+      <obj_property name="ObjectShortName">decoded_word[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/decode_enable">
+      <obj_property name="ElementShortName">decode_enable</obj_property>
+      <obj_property name="ObjectShortName">decode_enable</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/CTL_ADDR_REG_DOWNCOUNTER">
+      <obj_property name="ElementShortName">CTL_ADDR_REG_DOWNCOUNTER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CTL_ADDR_REG_DOWNCOUNTER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/CTL_ADDR_REG_BITS_TO_WRITE">
+      <obj_property name="ElementShortName">CTL_ADDR_REG_BITS_TO_WRITE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CTL_ADDR_REG_BITS_TO_WRITE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/CTL_ADDR_REG_CONTROL">
+      <obj_property name="ElementShortName">CTL_ADDR_REG_CONTROL[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CTL_ADDR_REG_CONTROL[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/CTL_ADDR_REG_OPTIONS">
+      <obj_property name="ElementShortName">CTL_ADDR_REG_OPTIONS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CTL_ADDR_REG_OPTIONS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/lfsr_decoder_h/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/controller_tb/uut/lfsr_decoder_h/ENA">
+      <obj_property name="ElementShortName">ENA</obj_property>
+      <obj_property name="ObjectShortName">ENA</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/lfsr_decoder_h/LFSR_in">
+      <obj_property name="ElementShortName">LFSR_in[12:0]</obj_property>
+      <obj_property name="ObjectShortName">LFSR_in[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/controller_tb/uut/lfsr_decoder_h/BIN_out">
+      <obj_property name="ElementShortName">BIN_out[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BIN_out[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/controller_tb/uut/lfsr_decoder_h/LFSR_in_i">
+      <obj_property name="ElementShortName">LFSR_in_i</obj_property>
+      <obj_property name="ObjectShortName">LFSR_in_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/controller_tb/uut/lfsr_decoder_h/BIN_out_i">
+      <obj_property name="ElementShortName">BIN_out_i</obj_property>
+      <obj_property name="ObjectShortName">BIN_out_i</obj_property>
+   </wvobject>
+</wave_config>

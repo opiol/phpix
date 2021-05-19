@@ -1,0 +1,139 @@
+ADDRESS 000
+JUMP _init
+JUMP _init
+JUMP _init
+JUMP _init
+_init:
+
+CONSTANT PORT_IO,00
+CONSTANT UART_DR,01
+CONSTANT UART_CR,02 
+
+CONSTANT MEM_L, 03
+CONSTANT MEM_H, 04
+CONSTANT MEM_D, 05
+CONSTANT MEM_CR, 06
+
+
+CONSTANT UART_BIT_RDA,80 	 ; rx data ready  |
+CONSTANT UART_BIT_TXF,40     ; tx buf full	  |- both have 16B FIFO
+CONSTANT MEM_BIT_WR, 02		 ; write to BRAM
+
+ CONSTANT CHAR_CR, 0D
+ CONSTANT CHAR_LF, 0A
+ CONSTANT CHAR_SPC,20
+
+;--------------------------------------------------------------
+;  MAIN Loop
+;--------------------------------------------------------------
+
+REGBANK A
+load	s4, 00 ;// address high byte
+load	s3, 00 ;// address low byte
+load    s5, 01 ;// data
+
+output	s3, MEM_L
+output	s3, MEM_H
+
+main2:
+	output	s4, MEM_H
+	output  s3, MEM_L
+	input	s0, MEM_D
+	output	s0, PORT_IO
+	jump main2 
+
+main:
+	
+	output	s5, MEM_D
+	output	s4, MEM_H
+	output	s3, MEM_L
+	load	s0, MEM_BIT_WR
+	output  s0, MEM_CR
+
+	add		s5,03 ;// INC data
+
+	load	s0,s5
+	call uart_send_byte
+
+	add		s3,01
+	addcy	s4,00
+
+	;// check last address (2047+1 => 2048 = 0x800)
+	compare		s3,00
+	comparecy	s4,08 
+	jump		Z, end	
+
+	jump main
+
+end:
+	jump end
+;--------------------------------------------------------------
+;  Subroutines
+;--------------------------------------------------------------
+
+; s0 (s1)
+uart_send_byte:
+	input	s1,UART_CR
+	test	s1,UART_BIT_TXF
+	jump	nz,uart_send_byte
+	output	s0, UART_DR
+	RETURN
+
+;  retval: s0  
+uart_get_byte:
+	input   s0, UART_CR
+	test 	s0, UART_BIT_RDA
+	jump     z, uart_get_byte
+	input   s0, UART_DR
+	RETURN 
+
+
+;  (s0,s1)
+uart_newline:
+	load s0,CHAR_LF
+	call uart_send_byte
+	load s0,CHAR_CR
+	call uart_send_byte
+	RETURN
+
+; s0 (s1,s2)
+uart_send_hex:
+	load	s2,s0 ; backup s0
+	SR0		s0
+	SR0		s0
+	SR0		s0
+	SR0		s0
+	;high part
+	compare s0,0a
+	jump	c,zerotonine ; 0..9
+	add		s0,07		; diff to 'A' 
+zerotonine:
+	add		s0,30 ;'0'
+	call	uart_send_byte
+	;low part
+	load	s0,s2
+	and		s0,0f
+	compare s0,0a
+	jump	c,zerotonine_l ; 0..9
+	add		s0,07		; diff to 'A' 
+zerotonine_l:
+	add		s0,30 ;'0'
+	call	uart_send_byte
+	RETURN 
+
+; Registers used s0, s1, s2
+include "soft_delays_100mhz.psm"
+;include "i2c_routines.psm"
+
+;--------------------------------------------------------------
+;  ISR
+;--------------------------------------------------------------
+_isr:
+REGBANK B
+
+
+REGBANK A
+RETURNI ENABLE
+
+ADDRESS 3FF
+jump _isr

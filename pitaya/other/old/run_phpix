@@ -1,0 +1,1 @@
+./phpix -a 0x43c00000 -g 0x41200000 -f PHPIX_mem_8bit.coe -v

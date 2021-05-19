@@ -1,0 +1,690 @@
+
+control:     file format elf32-littlearm
+
+
+Disassembly of section .init:
+
+000103c8 <_init>:
+   103c8:	e92d4008 	push	{r3, lr}
+   103cc:	eb000032 	bl	1049c <call_weak_fn>
+   103d0:	e8bd8008 	pop	{r3, pc}
+
+Disassembly of section .plt:
+
+000103d4 <printf@plt-0x14>:
+   103d4:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
+   103d8:	e59fe004 	ldr	lr, [pc, #4]	; 103e4 <_init+0x1c>
+   103dc:	e08fe00e 	add	lr, pc, lr
+   103e0:	e5bef008 	ldr	pc, [lr, #8]!
+   103e4:	00010c1c 	.word	0x00010c1c
+
+000103e8 <printf@plt>:
+   103e8:	e28fc600 	add	ip, pc, #0, 12
+   103ec:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   103f0:	e5bcfc1c 	ldr	pc, [ip, #3100]!	; 0xc1c
+
+000103f4 <sysconf@plt>:
+   103f4:	e28fc600 	add	ip, pc, #0, 12
+   103f8:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   103fc:	e5bcfc14 	ldr	pc, [ip, #3092]!	; 0xc14
+
+00010400 <perror@plt>:
+   10400:	e28fc600 	add	ip, pc, #0, 12
+   10404:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   10408:	e5bcfc0c 	ldr	pc, [ip, #3084]!	; 0xc0c
+
+0001040c <usleep@plt>:
+   1040c:	e28fc600 	add	ip, pc, #0, 12
+   10410:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   10414:	e5bcfc04 	ldr	pc, [ip, #3076]!	; 0xc04
+
+00010418 <puts@plt>:
+   10418:	e28fc600 	add	ip, pc, #0, 12
+   1041c:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   10420:	e5bcfbfc 	ldr	pc, [ip, #3068]!	; 0xbfc
+
+00010424 <__libc_start_main@plt>:
+   10424:	e28fc600 	add	ip, pc, #0, 12
+   10428:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   1042c:	e5bcfbf4 	ldr	pc, [ip, #3060]!	; 0xbf4
+
+00010430 <__gmon_start__@plt>:
+   10430:	e28fc600 	add	ip, pc, #0, 12
+   10434:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   10438:	e5bcfbec 	ldr	pc, [ip, #3052]!	; 0xbec
+
+0001043c <open@plt>:
+   1043c:	e28fc600 	add	ip, pc, #0, 12
+   10440:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   10444:	e5bcfbe4 	ldr	pc, [ip, #3044]!	; 0xbe4
+
+00010448 <mmap@plt>:
+   10448:	e28fc600 	add	ip, pc, #0, 12
+   1044c:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   10450:	e5bcfbdc 	ldr	pc, [ip, #3036]!	; 0xbdc
+
+00010454 <putchar@plt>:
+   10454:	e28fc600 	add	ip, pc, #0, 12
+   10458:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   1045c:	e5bcfbd4 	ldr	pc, [ip, #3028]!	; 0xbd4
+
+00010460 <abort@plt>:
+   10460:	e28fc600 	add	ip, pc, #0, 12
+   10464:	e28cca10 	add	ip, ip, #16, 20	; 0x10000
+   10468:	e5bcfbcc 	ldr	pc, [ip, #3020]!	; 0xbcc
+
+Disassembly of section .text:
+
+0001046c <_start>:
+   1046c:	f04f 0b00 	mov.w	fp, #0
+   10470:	f04f 0e00 	mov.w	lr, #0
+   10474:	bc02      	pop	{r1}
+   10476:	466a      	mov	r2, sp
+   10478:	b404      	push	{r2}
+   1047a:	b401      	push	{r0}
+   1047c:	f8df c010 	ldr.w	ip, [pc, #16]	; 10490 <_start+0x24>
+   10480:	f84d cd04 	str.w	ip, [sp, #-4]!
+   10484:	4803      	ldr	r0, [pc, #12]	; (10494 <_start+0x28>)
+   10486:	4b04      	ldr	r3, [pc, #16]	; (10498 <_start+0x2c>)
+   10488:	f7ff efcc 	blx	10424 <__libc_start_main@plt>
+   1048c:	f7ff efe8 	blx	10460 <abort@plt>
+   10490:	000108a9 	.word	0x000108a9
+   10494:	0001054d 	.word	0x0001054d
+   10498:	0001086d 	.word	0x0001086d
+
+0001049c <call_weak_fn>:
+   1049c:	e59f3014 	ldr	r3, [pc, #20]	; 104b8 <call_weak_fn+0x1c>
+   104a0:	e59f2014 	ldr	r2, [pc, #20]	; 104bc <call_weak_fn+0x20>
+   104a4:	e08f3003 	add	r3, pc, r3
+   104a8:	e7932002 	ldr	r2, [r3, r2]
+   104ac:	e3520000 	cmp	r2, #0
+   104b0:	012fff1e 	bxeq	lr
+   104b4:	eaffffdd 	b	10430 <__gmon_start__@plt>
+   104b8:	00010b54 	.word	0x00010b54
+   104bc:	00000038 	.word	0x00000038
+
+000104c0 <deregister_tm_clones>:
+   104c0:	4b07      	ldr	r3, [pc, #28]	; (104e0 <deregister_tm_clones+0x20>)
+   104c2:	f241 0044 	movw	r0, #4164	; 0x1044
+   104c6:	f2c0 0002 	movt	r0, #2
+   104ca:	1a1b      	subs	r3, r3, r0
+   104cc:	2b06      	cmp	r3, #6
+   104ce:	d905      	bls.n	104dc <deregister_tm_clones+0x1c>
+   104d0:	f240 0300 	movw	r3, #0
+   104d4:	f2c0 0300 	movt	r3, #0
+   104d8:	b103      	cbz	r3, 104dc <deregister_tm_clones+0x1c>
+   104da:	4718      	bx	r3
+   104dc:	4770      	bx	lr
+   104de:	bf00      	nop
+   104e0:	00021047 	.word	0x00021047
+
+000104e4 <register_tm_clones>:
+   104e4:	f241 0344 	movw	r3, #4164	; 0x1044
+   104e8:	f241 0044 	movw	r0, #4164	; 0x1044
+   104ec:	f2c0 0302 	movt	r3, #2
+   104f0:	f2c0 0002 	movt	r0, #2
+   104f4:	1a19      	subs	r1, r3, r0
+   104f6:	1089      	asrs	r1, r1, #2
+   104f8:	eb01 71d1 	add.w	r1, r1, r1, lsr #31
+   104fc:	1049      	asrs	r1, r1, #1
+   104fe:	d005      	beq.n	1050c <register_tm_clones+0x28>
+   10500:	f240 0300 	movw	r3, #0
+   10504:	f2c0 0300 	movt	r3, #0
+   10508:	b103      	cbz	r3, 1050c <register_tm_clones+0x28>
+   1050a:	4718      	bx	r3
+   1050c:	4770      	bx	lr
+   1050e:	bf00      	nop
+
+00010510 <__do_global_dtors_aux>:
+   10510:	b510      	push	{r4, lr}
+   10512:	f241 0444 	movw	r4, #4164	; 0x1044
+   10516:	f2c0 0402 	movt	r4, #2
+   1051a:	7823      	ldrb	r3, [r4, #0]
+   1051c:	b91b      	cbnz	r3, 10526 <__do_global_dtors_aux+0x16>
+   1051e:	f7ff ffcf 	bl	104c0 <deregister_tm_clones>
+   10522:	2301      	movs	r3, #1
+   10524:	7023      	strb	r3, [r4, #0]
+   10526:	bd10      	pop	{r4, pc}
+
+00010528 <frame_dummy>:
+   10528:	b508      	push	{r3, lr}
+   1052a:	f640 7014 	movw	r0, #3860	; 0xf14
+   1052e:	f2c0 0002 	movt	r0, #2
+   10532:	6803      	ldr	r3, [r0, #0]
+   10534:	b913      	cbnz	r3, 1053c <frame_dummy+0x14>
+   10536:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
+   1053a:	e7d3      	b.n	104e4 <register_tm_clones>
+   1053c:	f240 0300 	movw	r3, #0
+   10540:	f2c0 0300 	movt	r3, #0
+   10544:	2b00      	cmp	r3, #0
+   10546:	d0f6      	beq.n	10536 <frame_dummy+0xe>
+   10548:	4798      	blx	r3
+   1054a:	e7f4      	b.n	10536 <frame_dummy+0xe>
+
+0001054c <main>:
+#define MISO	(1 << 3)
+
+#define BUS ctl->DIRECT_IO
+
+int main(int argc, char** argv)
+{
+   1054c:	b580      	push	{r7, lr}
+   1054e:	b08e      	sub	sp, #56	; 0x38
+   10550:	af02      	add	r7, sp, #8
+   10552:	6078      	str	r0, [r7, #4]
+   10554:	6039      	str	r1, [r7, #0]
+	int fd;
+	size_t pgsize = PAGES_TO_OPEN * sysconf(_SC_PAGESIZE); /* open only multiples of whole page*/
+   10556:	201e      	movs	r0, #30
+   10558:	f7ff ef4c 	blx	103f4 <sysconf@plt>
+   1055c:	4603      	mov	r3, r0
+   1055e:	009b      	lsls	r3, r3, #2
+   10560:	61bb      	str	r3, [r7, #24]
+
+	if( (fd = open("/dev/mem", O_RDWR)) < 0){
+   10562:	2102      	movs	r1, #2
+   10564:	f640 00b8 	movw	r0, #2232	; 0x8b8
+   10568:	f2c0 0001 	movt	r0, #1
+   1056c:	f7ff ef66 	blx	1043c <open@plt>
+   10570:	61f8      	str	r0, [r7, #28]
+   10572:	69fb      	ldr	r3, [r7, #28]
+   10574:	2b00      	cmp	r3, #0
+   10576:	da07      	bge.n	10588 <main+0x3c>
+		perror("Unable to open memory");
+   10578:	f640 00c4 	movw	r0, #2244	; 0x8c4
+   1057c:	f2c0 0001 	movt	r0, #1
+   10580:	f7ff ef3e 	blx	10400 <perror@plt>
+		return EXIT_FAILURE;
+   10584:	2301      	movs	r3, #1
+   10586:	e10f      	b.n	107a8 <main+0x25c>
+	}
+
+	/* map Control structure to BRAM
+	 * If using only one instance, does not need static alocation of RAM
+	 * */
+	struct Control * ctl  = (struct Control *) mmap(NULL, pgsize, PROT_READ|PROT_WRITE, MAP_SHARED, fd, ADDR_CONTROL);
+   10588:	f04f 438c 	mov.w	r3, #1174405120	; 0x46000000
+   1058c:	9301      	str	r3, [sp, #4]
+   1058e:	69fb      	ldr	r3, [r7, #28]
+   10590:	9300      	str	r3, [sp, #0]
+   10592:	2301      	movs	r3, #1
+   10594:	2203      	movs	r2, #3
+   10596:	69b9      	ldr	r1, [r7, #24]
+   10598:	2000      	movs	r0, #0
+   1059a:	f7ff ef56 	blx	10448 <mmap@plt>
+   1059e:	6238      	str	r0, [r7, #32]
+	if(NULL == ctl){
+   105a0:	6a3b      	ldr	r3, [r7, #32]
+   105a2:	2b00      	cmp	r3, #0
+   105a4:	d107      	bne.n	105b6 <main+0x6a>
+		perror("Unable to map CONTROL");
+   105a6:	f640 00dc 	movw	r0, #2268	; 0x8dc
+   105aa:	f2c0 0001 	movt	r0, #1
+   105ae:	f7ff ef28 	blx	10400 <perror@plt>
+		return EXIT_FAILURE;
+   105b2:	2301      	movs	r3, #1
+   105b4:	e0f8      	b.n	107a8 <main+0x25c>
+	}
+
+	uint32_t * bram_global = mmap(NULL, pgsize, PROT_READ|PROT_WRITE, MAP_SHARED, fd, ADDR_GLOBAL_CONFIG);
+   105b6:	f04f 4380 	mov.w	r3, #1073741824	; 0x40000000
+   105ba:	9301      	str	r3, [sp, #4]
+   105bc:	69fb      	ldr	r3, [r7, #28]
+   105be:	9300      	str	r3, [sp, #0]
+   105c0:	2301      	movs	r3, #1
+   105c2:	2203      	movs	r2, #3
+   105c4:	69b9      	ldr	r1, [r7, #24]
+   105c6:	2000      	movs	r0, #0
+   105c8:	f7ff ef3e 	blx	10448 <mmap@plt>
+   105cc:	6278      	str	r0, [r7, #36]	; 0x24
+	if(NULL == bram_global){
+   105ce:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+   105d0:	2b00      	cmp	r3, #0
+   105d2:	d107      	bne.n	105e4 <main+0x98>
+		perror("unable to map GLOBAL");
+   105d4:	f640 00f4 	movw	r0, #2292	; 0x8f4
+   105d8:	f2c0 0001 	movt	r0, #1
+   105dc:	f7ff ef10 	blx	10400 <perror@plt>
+		return EXIT_FAILURE;
+   105e0:	2301      	movs	r3, #1
+   105e2:	e0e1      	b.n	107a8 <main+0x25c>
+	}
+
+	uint32_t * bram_local = mmap(NULL, pgsize, PROT_READ|PROT_WRITE, MAP_SHARED, fd, ADDR_LOCAL_CONFIG);
+   105e4:	f04f 4384 	mov.w	r3, #1107296256	; 0x42000000
+   105e8:	9301      	str	r3, [sp, #4]
+   105ea:	69fb      	ldr	r3, [r7, #28]
+   105ec:	9300      	str	r3, [sp, #0]
+   105ee:	2301      	movs	r3, #1
+   105f0:	2203      	movs	r2, #3
+   105f2:	69b9      	ldr	r1, [r7, #24]
+   105f4:	2000      	movs	r0, #0
+   105f6:	f7ff ef28 	blx	10448 <mmap@plt>
+   105fa:	62b8      	str	r0, [r7, #40]	; 0x28
+	if(NULL == bram_local){
+   105fc:	6abb      	ldr	r3, [r7, #40]	; 0x28
+   105fe:	2b00      	cmp	r3, #0
+   10600:	d107      	bne.n	10612 <main+0xc6>
+		perror("unable to map LOCAL");
+   10602:	f640 100c 	movw	r0, #2316	; 0x90c
+   10606:	f2c0 0001 	movt	r0, #1
+   1060a:	f7ff eefa 	blx	10400 <perror@plt>
+		return EXIT_FAILURE;
+   1060e:	2301      	movs	r3, #1
+   10610:	e0ca      	b.n	107a8 <main+0x25c>
+	}
+
+	uint32_t * bram_data = mmap(NULL, pgsize, PROT_READ|PROT_WRITE, MAP_SHARED, fd, ADDR_DATA);
+   10612:	f04f 4388 	mov.w	r3, #1140850688	; 0x44000000
+   10616:	9301      	str	r3, [sp, #4]
+   10618:	69fb      	ldr	r3, [r7, #28]
+   1061a:	9300      	str	r3, [sp, #0]
+   1061c:	2301      	movs	r3, #1
+   1061e:	2203      	movs	r2, #3
+   10620:	69b9      	ldr	r1, [r7, #24]
+   10622:	2000      	movs	r0, #0
+   10624:	f7ff ef10 	blx	10448 <mmap@plt>
+   10628:	62f8      	str	r0, [r7, #44]	; 0x2c
+	if(NULL == bram_local){
+   1062a:	6abb      	ldr	r3, [r7, #40]	; 0x28
+   1062c:	2b00      	cmp	r3, #0
+   1062e:	d107      	bne.n	10640 <main+0xf4>
+		perror("unable to map DATA");
+   10630:	f640 1020 	movw	r0, #2336	; 0x920
+   10634:	f2c0 0001 	movt	r0, #1
+   10638:	f7ff eee2 	blx	10400 <perror@plt>
+		return EXIT_FAILURE;
+   1063c:	2301      	movs	r3, #1
+   1063e:	e0b3      	b.n	107a8 <main+0x25c>
+	}
+
+
+	for (int i =0; i < 8; i++){
+   10640:	2300      	movs	r3, #0
+   10642:	60fb      	str	r3, [r7, #12]
+   10644:	e027      	b.n	10696 <main+0x14a>
+		bram_global[i*4+3] = 0b00000000000000000000000010010000;
+   10646:	68fb      	ldr	r3, [r7, #12]
+   10648:	011b      	lsls	r3, r3, #4
+   1064a:	330c      	adds	r3, #12
+   1064c:	6a7a      	ldr	r2, [r7, #36]	; 0x24
+   1064e:	4413      	add	r3, r2
+   10650:	2290      	movs	r2, #144	; 0x90
+   10652:	601a      	str	r2, [r3, #0]
+		bram_global[i*4+2] = 0b00011000000011000000001101100011;
+   10654:	68fb      	ldr	r3, [r7, #12]
+   10656:	011b      	lsls	r3, r3, #4
+   10658:	3308      	adds	r3, #8
+   1065a:	6a7a      	ldr	r2, [r7, #36]	; 0x24
+   1065c:	441a      	add	r2, r3
+   1065e:	f240 3363 	movw	r3, #867	; 0x363
+   10662:	f6c1 030c 	movt	r3, #6156	; 0x180c
+   10666:	6013      	str	r3, [r2, #0]
+		bram_global[i*4+1] = 0b00011101100101001100111000100000;
+   10668:	68fb      	ldr	r3, [r7, #12]
+   1066a:	011b      	lsls	r3, r3, #4
+   1066c:	3304      	adds	r3, #4
+   1066e:	6a7a      	ldr	r2, [r7, #36]	; 0x24
+   10670:	441a      	add	r2, r3
+   10672:	f64c 6320 	movw	r3, #52768	; 0xce20
+   10676:	f6c1 5394 	movt	r3, #7572	; 0x1d94
+   1067a:	6013      	str	r3, [r2, #0]
+		bram_global[i*4+0] = 0b00011111110011010111011100010110;
+   1067c:	68fb      	ldr	r3, [r7, #12]
+   1067e:	011b      	lsls	r3, r3, #4
+   10680:	461a      	mov	r2, r3
+   10682:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+   10684:	441a      	add	r2, r3
+   10686:	f247 7316 	movw	r3, #30486	; 0x7716
+   1068a:	f6c1 73cd 	movt	r3, #8141	; 0x1fcd
+   1068e:	6013      	str	r3, [r2, #0]
+		perror("unable to map DATA");
+		return EXIT_FAILURE;
+	}
+
+
+	for (int i =0; i < 8; i++){
+   10690:	68fb      	ldr	r3, [r7, #12]
+   10692:	3301      	adds	r3, #1
+   10694:	60fb      	str	r3, [r7, #12]
+   10696:	68fb      	ldr	r3, [r7, #12]
+   10698:	2b07      	cmp	r3, #7
+   1069a:	ddd4      	ble.n	10646 <main+0xfa>
+		bram_global[i*4+3] = 0b00000000000000000000000010010000;
+		bram_global[i*4+2] = 0b00011000000011000000001101100011;
+		bram_global[i*4+1] = 0b00011101100101001100111000100000;
+		bram_global[i*4+0] = 0b00011111110011010111011100010110;
+	}
+	printf("\n\n\n\n\n");
+   1069c:	f640 1034 	movw	r0, #2356	; 0x934
+   106a0:	f2c0 0001 	movt	r0, #1
+   106a4:	f7ff eeb8 	blx	10418 <puts@plt>
+	printf("\nglobal3: %08X\n",bram_global[3]);
+   106a8:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+   106aa:	330c      	adds	r3, #12
+   106ac:	681b      	ldr	r3, [r3, #0]
+   106ae:	4619      	mov	r1, r3
+   106b0:	f640 103c 	movw	r0, #2364	; 0x93c
+   106b4:	f2c0 0001 	movt	r0, #1
+   106b8:	f7ff ee96 	blx	103e8 <printf@plt>
+	printf("global2: %08X\n",bram_global[2]);
+   106bc:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+   106be:	3308      	adds	r3, #8
+   106c0:	681b      	ldr	r3, [r3, #0]
+   106c2:	4619      	mov	r1, r3
+   106c4:	f640 104c 	movw	r0, #2380	; 0x94c
+   106c8:	f2c0 0001 	movt	r0, #1
+   106cc:	f7ff ee8c 	blx	103e8 <printf@plt>
+	printf("global1: %08X\n",bram_global[1]);
+   106d0:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+   106d2:	3304      	adds	r3, #4
+   106d4:	681b      	ldr	r3, [r3, #0]
+   106d6:	4619      	mov	r1, r3
+   106d8:	f640 105c 	movw	r0, #2396	; 0x95c
+   106dc:	f2c0 0001 	movt	r0, #1
+   106e0:	f7ff ee82 	blx	103e8 <printf@plt>
+	printf("global0: %08X\n",bram_global[0]);
+   106e4:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+   106e6:	681b      	ldr	r3, [r3, #0]
+   106e8:	4619      	mov	r1, r3
+   106ea:	f640 106c 	movw	r0, #2412	; 0x96c
+   106ee:	f2c0 0001 	movt	r0, #1
+   106f2:	f7ff ee7a 	blx	103e8 <printf@plt>
+
+	for (int i =0; i < 16*8; i++){
+   106f6:	2300      	movs	r3, #0
+   106f8:	613b      	str	r3, [r7, #16]
+   106fa:	e00b      	b.n	10714 <main+0x1c8>
+		bram_local[i] = 0b10011110011111001001111001111100;
+   106fc:	693b      	ldr	r3, [r7, #16]
+   106fe:	009b      	lsls	r3, r3, #2
+   10700:	6aba      	ldr	r2, [r7, #40]	; 0x28
+   10702:	441a      	add	r2, r3
+   10704:	f649 637c 	movw	r3, #40572	; 0x9e7c
+   10708:	f6c9 637c 	movt	r3, #40572	; 0x9e7c
+   1070c:	6013      	str	r3, [r2, #0]
+	printf("\nglobal3: %08X\n",bram_global[3]);
+	printf("global2: %08X\n",bram_global[2]);
+	printf("global1: %08X\n",bram_global[1]);
+	printf("global0: %08X\n",bram_global[0]);
+
+	for (int i =0; i < 16*8; i++){
+   1070e:	693b      	ldr	r3, [r7, #16]
+   10710:	3301      	adds	r3, #1
+   10712:	613b      	str	r3, [r7, #16]
+   10714:	693b      	ldr	r3, [r7, #16]
+   10716:	2b7f      	cmp	r3, #127	; 0x7f
+   10718:	ddf0      	ble.n	106fc <main+0x1b0>
+		bram_local[i] = 0b10011110011111001001111001111100;
+	}
+	
+	printf("local 1 local 0: %08X\n",bram_local[0]);
+   1071a:	6abb      	ldr	r3, [r7, #40]	; 0x28
+   1071c:	681b      	ldr	r3, [r3, #0]
+   1071e:	4619      	mov	r1, r3
+   10720:	f640 107c 	movw	r0, #2428	; 0x97c
+   10724:	f2c0 0001 	movt	r0, #1
+   10728:	f7ff ee5e 	blx	103e8 <printf@plt>
+
+	ctl->PHC = 0x8;
+   1072c:	6a3b      	ldr	r3, [r7, #32]
+   1072e:	2208      	movs	r2, #8
+   10730:	60da      	str	r2, [r3, #12]
+	ctl->PRE = 0x7C; /* Fout = 1meg */
+   10732:	6a3b      	ldr	r3, [r7, #32]
+   10734:	227c      	movs	r2, #124	; 0x7c
+   10736:	615a      	str	r2, [r3, #20]
+	ctl->SHP = 10000u; /*10ms @ 1MHz*/
+   10738:	6a3b      	ldr	r3, [r7, #32]
+   1073a:	f242 7210 	movw	r2, #10000	; 0x2710
+   1073e:	609a      	str	r2, [r3, #8]
+
+	printf("\ninitializing with AA\n");
+   10740:	f640 1094 	movw	r0, #2452	; 0x994
+   10744:	f2c0 0001 	movt	r0, #1
+   10748:	f7ff ee66 	blx	10418 <puts@plt>
+	
+	
+	for(int i = 0;i < 1024; i++){
+   1074c:	2300      	movs	r3, #0
+   1074e:	617b      	str	r3, [r7, #20]
+   10750:	e009      	b.n	10766 <main+0x21a>
+		bram_data[i] = 0xaaaaaaaa;
+   10752:	697b      	ldr	r3, [r7, #20]
+   10754:	009b      	lsls	r3, r3, #2
+   10756:	6afa      	ldr	r2, [r7, #44]	; 0x2c
+   10758:	4413      	add	r3, r2
+   1075a:	f04f 32aa 	mov.w	r2, #2863311530	; 0xaaaaaaaa
+   1075e:	601a      	str	r2, [r3, #0]
+	ctl->SHP = 10000u; /*10ms @ 1MHz*/
+
+	printf("\ninitializing with AA\n");
+	
+	
+	for(int i = 0;i < 1024; i++){
+   10760:	697b      	ldr	r3, [r7, #20]
+   10762:	3301      	adds	r3, #1
+   10764:	617b      	str	r3, [r7, #20]
+   10766:	697b      	ldr	r3, [r7, #20]
+   10768:	f5b3 6f80 	cmp.w	r3, #1024	; 0x400
+   1076c:	dbf1      	blt.n	10752 <main+0x206>
+	}
+
+//	for(int i = 0;i < 1024;i+=4){
+//		printf("%04d: %08X %08X %08X %08X\n",i,bram_data[i], bram_data[i+1],bram_data[i+2],bram_data[i+3]);
+//	}
+	printf("using dire IO access\n");
+   1076e:	f640 10ac 	movw	r0, #2476	; 0x9ac
+   10772:	f2c0 0001 	movt	r0, #1
+   10776:	f7ff ee50 	blx	10418 <puts@plt>
+	
+	//set mux to direct IO(4th bit in CR reg)
+	ctl->CR = (1 << 4);
+   1077a:	6a3b      	ldr	r3, [r7, #32]
+   1077c:	2210      	movs	r2, #16
+   1077e:	601a      	str	r2, [r3, #0]
+	usleep(1000);
+   10780:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+   10784:	f7ff ee42 	blx	1040c <usleep@plt>
+	// all outs to high
+	BUS = SCK | MOSI | CS;
+   10788:	6a3b      	ldr	r3, [r7, #32]
+   1078a:	2207      	movs	r2, #7
+   1078c:	619a      	str	r2, [r3, #24]
+	usleep(1000000);
+   1078e:	f244 2040 	movw	r0, #16960	; 0x4240
+   10792:	f2c0 000f 	movt	r0, #15
+   10796:	f7ff ee3a 	blx	1040c <usleep@plt>
+	BUS = 0;
+   1079a:	6a3b      	ldr	r3, [r7, #32]
+   1079c:	2200      	movs	r2, #0
+   1079e:	619a      	str	r2, [r3, #24]
+	printf("\n");
+	for(int i = 0;i < 1024;i+=4){
+		printf("%04d: %08X %08X %08X %08X\n",i,bram_data[i], bram_data[i+1],bram_data[i+2],bram_data[i+3]);
+	}
+#endif
+	printf("\n");
+   107a0:	200a      	movs	r0, #10
+   107a2:	f7ff ee58 	blx	10454 <putchar@plt>
+
+	return 0;
+   107a6:	2300      	movs	r3, #0
+}
+   107a8:	4618      	mov	r0, r3
+   107aa:	3730      	adds	r7, #48	; 0x30
+   107ac:	46bd      	mov	sp, r7
+   107ae:	bd80      	pop	{r7, pc}
+
+000107b0 <create_lfsr_lut>:
+#include "lfsr.h"
+
+void create_lfsr_lut(uint16_t * empty_list_8192)
+{
+   107b0:	b480      	push	{r7}
+   107b2:	b085      	sub	sp, #20
+   107b4:	af00      	add	r7, sp, #0
+   107b6:	6078      	str	r0, [r7, #4]
+	uint16_t lfsr = 0x1fff; // 13 bit lfsr counter
+   107b8:	f641 73ff 	movw	r3, #8191	; 0x1fff
+   107bc:	813b      	strh	r3, [r7, #8]
+	uint16_t tmp;
+
+	for( int i = 0; i < 8192; i++){
+   107be:	2300      	movs	r3, #0
+   107c0:	60fb      	str	r3, [r7, #12]
+   107c2:	e027      	b.n	10814 <create_lfsr_lut+0x64>
+
+		empty_list_8192[i] = lfsr | 0xe000; // phpix format, 3 msb always ones
+   107c4:	68fb      	ldr	r3, [r7, #12]
+   107c6:	005b      	lsls	r3, r3, #1
+   107c8:	687a      	ldr	r2, [r7, #4]
+   107ca:	441a      	add	r2, r3
+   107cc:	893b      	ldrh	r3, [r7, #8]
+   107ce:	ea6f 43c3 	mvn.w	r3, r3, lsl #19
+   107d2:	ea6f 43d3 	mvn.w	r3, r3, lsr #19
+   107d6:	b29b      	uxth	r3, r3
+   107d8:	8013      	strh	r3, [r2, #0]
+
+	tmp = lfsr ^ (lfsr << 3); //xor 9th a 12th
+   107da:	893b      	ldrh	r3, [r7, #8]
+   107dc:	00db      	lsls	r3, r3, #3
+   107de:	b21a      	sxth	r2, r3
+   107e0:	f9b7 3008 	ldrsh.w	r3, [r7, #8]
+   107e4:	4053      	eors	r3, r2
+   107e6:	b21b      	sxth	r3, r3
+   107e8:	817b      	strh	r3, [r7, #10]
+	tmp = tmp >> 12;
+   107ea:	897b      	ldrh	r3, [r7, #10]
+   107ec:	0b1b      	lsrs	r3, r3, #12
+   107ee:	817b      	strh	r3, [r7, #10]
+	tmp = tmp & 0x0001;
+   107f0:	897b      	ldrh	r3, [r7, #10]
+   107f2:	f003 0301 	and.w	r3, r3, #1
+   107f6:	817b      	strh	r3, [r7, #10]
+
+	lfsr = lfsr << 1;
+   107f8:	893b      	ldrh	r3, [r7, #8]
+   107fa:	005b      	lsls	r3, r3, #1
+   107fc:	813b      	strh	r3, [r7, #8]
+	lfsr = lfsr | tmp;
+   107fe:	893a      	ldrh	r2, [r7, #8]
+   10800:	897b      	ldrh	r3, [r7, #10]
+   10802:	4313      	orrs	r3, r2
+   10804:	813b      	strh	r3, [r7, #8]
+	lfsr = lfsr & 0x1fff; //counter operates as 13 bit
+   10806:	893b      	ldrh	r3, [r7, #8]
+   10808:	f3c3 030c 	ubfx	r3, r3, #0, #13
+   1080c:	813b      	strh	r3, [r7, #8]
+void create_lfsr_lut(uint16_t * empty_list_8192)
+{
+	uint16_t lfsr = 0x1fff; // 13 bit lfsr counter
+	uint16_t tmp;
+
+	for( int i = 0; i < 8192; i++){
+   1080e:	68fb      	ldr	r3, [r7, #12]
+   10810:	3301      	adds	r3, #1
+   10812:	60fb      	str	r3, [r7, #12]
+   10814:	68fb      	ldr	r3, [r7, #12]
+   10816:	f5b3 5f00 	cmp.w	r3, #8192	; 0x2000
+   1081a:	dbd3      	blt.n	107c4 <create_lfsr_lut+0x14>
+
+	lfsr = lfsr << 1;
+	lfsr = lfsr | tmp;
+	lfsr = lfsr & 0x1fff; //counter operates as 13 bit
+	};
+}
+   1081c:	bf00      	nop
+   1081e:	3714      	adds	r7, #20
+   10820:	46bd      	mov	sp, r7
+   10822:	f85d 7b04 	ldr.w	r7, [sp], #4
+   10826:	4770      	bx	lr
+
+00010828 <lfsr_decode>:
+
+int lfsr_decode(uint16_t value, uint16_t * lut)
+{
+   10828:	b480      	push	{r7}
+   1082a:	b085      	sub	sp, #20
+   1082c:	af00      	add	r7, sp, #0
+   1082e:	4603      	mov	r3, r0
+   10830:	6039      	str	r1, [r7, #0]
+   10832:	80fb      	strh	r3, [r7, #6]
+	int i;
+
+	for(i = 0; i < 8192; i++){
+   10834:	2300      	movs	r3, #0
+   10836:	60fb      	str	r3, [r7, #12]
+   10838:	e00c      	b.n	10854 <lfsr_decode+0x2c>
+		if(value == lut[i] )
+   1083a:	68fb      	ldr	r3, [r7, #12]
+   1083c:	005b      	lsls	r3, r3, #1
+   1083e:	683a      	ldr	r2, [r7, #0]
+   10840:	4413      	add	r3, r2
+   10842:	881b      	ldrh	r3, [r3, #0]
+   10844:	88fa      	ldrh	r2, [r7, #6]
+   10846:	429a      	cmp	r2, r3
+   10848:	d101      	bne.n	1084e <lfsr_decode+0x26>
+			return i;
+   1084a:	68fb      	ldr	r3, [r7, #12]
+   1084c:	e008      	b.n	10860 <lfsr_decode+0x38>
+
+int lfsr_decode(uint16_t value, uint16_t * lut)
+{
+	int i;
+
+	for(i = 0; i < 8192; i++){
+   1084e:	68fb      	ldr	r3, [r7, #12]
+   10850:	3301      	adds	r3, #1
+   10852:	60fb      	str	r3, [r7, #12]
+   10854:	68fb      	ldr	r3, [r7, #12]
+   10856:	f5b3 5f00 	cmp.w	r3, #8192	; 0x2000
+   1085a:	dbee      	blt.n	1083a <lfsr_decode+0x12>
+		if(value == lut[i] )
+			return i;
+	}
+	/* not found */
+	return -1;
+   1085c:	f04f 33ff 	mov.w	r3, #4294967295
+}
+   10860:	4618      	mov	r0, r3
+   10862:	3714      	adds	r7, #20
+   10864:	46bd      	mov	sp, r7
+   10866:	f85d 7b04 	ldr.w	r7, [sp], #4
+   1086a:	4770      	bx	lr
+
+0001086c <__libc_csu_init>:
+   1086c:	e92d 43f8 	stmdb	sp!, {r3, r4, r5, r6, r7, r8, r9, lr}
+   10870:	4607      	mov	r7, r0
+   10872:	4e0b      	ldr	r6, [pc, #44]	; (108a0 <__libc_csu_init+0x34>)
+   10874:	4688      	mov	r8, r1
+   10876:	4d0b      	ldr	r5, [pc, #44]	; (108a4 <__libc_csu_init+0x38>)
+   10878:	4691      	mov	r9, r2
+   1087a:	447e      	add	r6, pc
+   1087c:	f7ff eda4 	blx	103c8 <_init>
+   10880:	447d      	add	r5, pc
+   10882:	1b76      	subs	r6, r6, r5
+   10884:	10b6      	asrs	r6, r6, #2
+   10886:	d009      	beq.n	1089c <__libc_csu_init+0x30>
+   10888:	2400      	movs	r4, #0
+   1088a:	3401      	adds	r4, #1
+   1088c:	f855 3b04 	ldr.w	r3, [r5], #4
+   10890:	464a      	mov	r2, r9
+   10892:	4641      	mov	r1, r8
+   10894:	4638      	mov	r0, r7
+   10896:	4798      	blx	r3
+   10898:	42b4      	cmp	r4, r6
+   1089a:	d1f6      	bne.n	1088a <__libc_csu_init+0x1e>
+   1089c:	e8bd 83f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, r8, r9, pc}
+   108a0:	00010692 	.word	0x00010692
+   108a4:	00010688 	.word	0x00010688
+
+000108a8 <__libc_csu_fini>:
+   108a8:	4770      	bx	lr
+   108aa:	bf00      	nop
+
+Disassembly of section .fini:
+
+000108ac <_fini>:
+   108ac:	e92d4008 	push	{r3, lr}
+   108b0:	e8bd8008 	pop	{r3, pc}

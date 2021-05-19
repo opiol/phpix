@@ -1,0 +1,75 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+App	HOST/main.c	/^} App;$/;"	t	typeref:struct:__anon1	file:
+CHIP_SIZE_BITS	server.c	27;"	d	file:
+CHIP_SIZE_BYTES	server.c	28;"	d	file:
+FONT1_PATH	HOST/main.c	19;"	d	file:
+FONT2_PATH	HOST/main.c	20;"	d	file:
+FONTH	HOST/main.c	14;"	d	file:
+ItemState	HOST/main.c	/^enum ItemState {$/;"	g	file:
+ItemStateEditing	HOST/main.c	/^    ItemStateEditing$/;"	e	enum:ItemState	file:
+ItemStateNormal	HOST/main.c	/^    ItemStateNormal,$/;"	e	enum:ItemState	file:
+MENU_ITEMS	HOST/main.c	32;"	d	file:
+PIXSIZE	HOST/main.c	13;"	d	file:
+PORT	server.c	20;"	d	file:
+REG_BASE_CFG	server.c	23;"	d	file:
+REG_BASE_CTL	server.c	25;"	d	file:
+REG_BASE_DAT	server.c	24;"	d	file:
+RXBUF_SIZE	server.c	87;"	d	file:
+SCALE_SIZE_BITS	server.c	30;"	d	file:
+SCALE_SIZE_BYTES	server.c	31;"	d	file:
+SCREEN_HEIGHT	HOST/main.c	16;"	d	file:
+SCREEN_LAST_LINE	HOST/main.c	17;"	d	file:
+SCREEN_WIDTH	HOST/main.c	15;"	d	file:
+__DATA_H__	data.h	2;"	d
+addr	HOST/main.c	/^struct sockaddr_in addr = {0};$/;"	v	typeref:struct:sockaddr_in
+app	HOST/main.c	/^App app;$/;"	v
+ascii_buf	HOST/main.c	/^char ascii_buf[256*6*5] = {0};$/;"	v
+bits_to_send	server.c	/^    uint32_t bits_to_send;$/;"	m	struct:control	file:
+boldpos	HOST/main.c	/^    int boldpos;$/;"	m	struct:menu_s	file:
+clkdiv	server.c	/^    uint32_t clkdiv;$/;"	m	struct:control	file:
+config	server.c	/^    uint32_t config;$/;"	m	struct:control	file:
+connfd	server.c	/^int connfd;$/;"	v
+control	server.c	/^struct control{$/;"	s	file:
+data	server.c	/^uint16_t data[256];$/;"	v
+data_load_from_file	data.c	/^int data_load_from_file(char * path, uint8_t * phpix_data, size_t bits_to_read)$/;"	f
+data_print_img	data.c	/^int data_print_img(uint32_t * phpix_data )$/;"	f
+data_print_mem_layout	data.c	/^int data_print_mem_layout(uint8_t * phpix_data, size_t bits_to_print )$/;"	f
+data_str	server.c	/^char data_str[256 * 6];$/;"	v
+doInput	HOST/main.c	/^void doInput(void)$/;"	f
+encode_data	server.c	/^void encode_data(void)$/;"	f
+font1	HOST/main.c	/^TTF_Font *font1;$/;"	v
+font2	HOST/main.c	/^TTF_Font *font2;$/;"	v
+get_data	server.c	/^void get_data(int init)$/;"	f
+img_data	HOST/main.c	/^uint16_t img_data[512];$/;"	v
+initSDL	HOST/main.c	/^void initSDL(void)$/;"	f
+init_net	HOST/main.c	/^int init_net(void)$/;"	f
+ip	HOST/main.c	/^char ip[32] = "127.0.0.1";$/;"	v
+item	HOST/main.c	/^    struct menuitem item[MENU_ITEMS];$/;"	m	struct:menu_s	typeref:struct:menu_s::menuitem	file:
+main	HOST/main.c	/^int main(int argc, char *argv[])$/;"	f
+main	server.c	/^int main(int argc, char **argv)$/;"	f
+map	server.c	/^void map(uint32_t phys, size_t size, uint32_t ** mapped)$/;"	f
+menu	HOST/main.c	/^struct menu_s menu ={$/;"	v	typeref:struct:menu_s
+menu_s	HOST/main.c	/^struct menu_s {$/;"	s	file:
+menuitem	HOST/main.c	/^struct menuitem {$/;"	s	file:
+name	HOST/main.c	/^    char name[64];$/;"	m	struct:menuitem	file:
+net_initialized	HOST/main.c	/^int net_initialized  = 0;$/;"	v
+net_recv	HOST/main.c	/^void net_recv(void) {$/;"	f
+options	server.c	/^    uint32_t options;$/;"	m	struct:control	file:
+parse_data	HOST/main.c	/^void parse_data(void) {$/;"	f
+prepareScene	HOST/main.c	/^void prepareScene(void)$/;"	f
+presentScene	HOST/main.c	/^void presentScene(void)$/;"	f
+renderer	HOST/main.c	/^	SDL_Renderer *renderer;$/;"	m	struct:__anon1	file:
+rxbuf	server.c	/^char rxbuf[RXBUF_SIZE] = {0};$/;"	v
+sock	HOST/main.c	/^int sock;$/;"	v
+state	HOST/main.c	/^    enum ItemState state;$/;"	m	struct:menu_s	typeref:enum:menu_s::ItemState	file:
+textval	HOST/main.c	/^char textval[64] = {0};$/;"	v
+textval_pos	HOST/main.c	/^int textval_pos = 0;$/;"	v
+timeout	server.c	/^struct timeval timeout = {$/;"	v	typeref:struct:timeval
+tooltip	HOST/main.c	/^    char tooltip[64];$/;"	m	struct:menuitem	file:
+value	HOST/main.c	/^    uint64_t value;$/;"	m	struct:menuitem	file:
+window	HOST/main.c	/^	SDL_Window *window;$/;"	m	struct:__anon1	file:

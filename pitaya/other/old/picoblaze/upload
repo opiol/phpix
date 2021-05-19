@@ -1,0 +1,4 @@
+
+./blaze_reset 1
+./blaze_write
+./blaze_reset 0

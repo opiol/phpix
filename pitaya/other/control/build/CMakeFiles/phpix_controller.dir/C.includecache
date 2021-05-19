@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/debian/phpix-pitaya-sw/control/data.c
+data.h
+/home/debian/phpix-pitaya-sw/control/data.h
+string.h
+-
+stdio.h
+-
+stdbool.h
+-
+
+/home/debian/phpix-pitaya-sw/control/data.h
+stdint.h
+-
+stddef.h
+-
+

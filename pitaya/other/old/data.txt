@@ -1,0 +1,120 @@
+
+ data_address: 0x43C00000
+ gpio address: 0x41200000
+filename:PHPIX_mem_8bit.coe
+discarding string:memory_initialization_radix=16;
+
+discarding string:memory_initialization_vector=
+
+data count:616
+**********************************
+Initializing mmemory
+0x0000: b7 6f df be 3d c0 d4 1d 63 07 0c 18 10 02 09 02
+0x0010: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x0020: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x0030: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x0040: 09 02 09 02 09 02 09 02 09 02 09 02 09 b7 6f df
+0x0050: be 3d c0 d4 1d 63 07 0c 18 10 02 09 02 09 02 09
+0x0060: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x0070: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x0080: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x0090: 02 09 02 09 02 09 02 09 02 09 b7 6f df be 3d c0
+0x00A0: d4 1d 63 07 0c 18 10 02 09 02 09 02 09 02 09 02
+0x00B0: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x00C0: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x00D0: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x00E0: 09 02 09 02 09 02 09 b7 6f df be 3d c0 d4 1d 63
+0x00F0: 07 0c 18 10 02 09 02 09 02 09 02 09 02 09 02 09
+0x0100: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x0110: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x0120: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x0130: 02 09 02 09 b7 6f df be 3d c0 d4 1d 63 07 0c 18
+0x0140: 10 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x0150: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x0160: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x0170: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x0180: 09 b7 6f df be 3d c0 d4 1d 63 07 0c 18 10 02 09
+0x0190: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x01A0: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x01B0: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x01C0: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 b7 6f
+0x01D0: df be 3d c0 d4 1d 63 07 0c 18 10 02 09 02 09 02
+0x01E0: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x01F0: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x0200: 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02
+0x0210: 09 02 09 02 09 02 09 02 09 02 09 b7 6f df be 3d
+0x0220: c0 d4 1d 63 07 0c 18 10 02 09 02 09 02 09 02 09
+0x0230: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x0240: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x0250: 02 09 02 09 02 09 02 09 02 09 02 09 02 09 02 09
+0x0260: 02 09 02 09 02 09 02 09 00 00 00 00 00 00 00 00
+
+ Start phpix...
+AFTER: printing 64*8 Bytes from address 616:
+0x0000: 00 b7 6f df be 3d c0 d4 1d 63 07 0c 18 10 ff ff
+0x0010: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0020: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0030: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0040: ff ff ff ff ff ff ff ff ff ff ff ff ff ff b7 6f
+0x0050: df be 3d c0 d4 1d 63 07 0c 18 10 ff ff ff ff ff
+0x0060: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0070: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0080: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0090: ff ff ff ff ff ff ff ff ff ff ff b7 6f df be 3d
+0x00A0: c0 d4 1d 63 07 0c 18 10 ff ff ff ff ff ff ff ff
+0x00B0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x00C0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x00D0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x00E0: ff ff ff ff ff ff ff ff b7 6f df be 3d c0 d4 1d
+0x00F0: 63 07 0c 18 10 ff ff ff ff ff ff ff ff ff ff ff
+0x0100: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0110: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0120: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0130: ff ff ff ff ff b7 6f df be 3d c0 d4 1d 63 07 0c
+0x0140: 18 10 ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0150: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0160: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0170: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x0180: ff ff b7 6f df be 3d c0 d4 1d 63 07 0c 18 10 ff
+0x0190: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x01A0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x01B0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x01C0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff b7
+0x01D0: 6f df be 3d c0 d4 1d 63 07 0c 18 10 ff ff ff ff
+0x01E0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+0x01F0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+
+***********************
+ byte swapped, 16bit:
+0x0000:  b700 df6f 3dbe d4c0 631d 0c07 1018 ffff
+0x0008:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0010:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0018:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0020:  ffff ffff ffff ffff ffff ffff ffff 6fb7
+0x0028:  bedf c03d 1dd4 0763 180c ff10 ffff ffff
+0x0030:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0038:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0040:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0048:  ffff ffff ffff ffff ffff b7ff df6f 3dbe
+0x0050:  d4c0 631d 0c07 1018 ffff ffff ffff ffff
+0x0058:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0060:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0068:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0070:  ffff ffff ffff ffff 6fb7 bedf c03d 1dd4
+0x0078:  0763 180c ff10 ffff ffff ffff ffff ffff
+0x0080:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0088:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0090:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x0098:  ffff ffff b7ff df6f 3dbe d4c0 631d 0c07
+0x00A0:  1018 ffff ffff ffff ffff ffff ffff ffff
+0x00A8:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x00B0:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x00B8:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x00C0:  ffff 6fb7 bedf c03d 1dd4 0763 180c ff10
+0x00C8:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x00D0:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x00D8:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x00E0:  ffff ffff ffff ffff ffff ffff ffff b7ff
+0x00E8:  df6f 3dbe d4c0 631d 0c07 1018 ffff ffff
+0x00F0:  ffff ffff ffff ffff ffff ffff ffff ffff
+0x00F8:  ffff ffff ffff ffff ffff ffff ffff ffff

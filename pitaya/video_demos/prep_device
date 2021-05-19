@@ -1,0 +1,4 @@
+#pripravi testovaci obraz, 1 capture device jako /dev/video0
+sudo modprobe vivid n_devs=1 node_types=0x01 num_inputs=0x1 input_types=0x3
+v4l2-ctl --set-fmt-video=width=320,height=240
+

@@ -1,0 +1,20 @@
+# zjisti IP, aktualizuje index.html, spusti stream a webserver
+
+ipaddr=$(ip address show dev eth0 scope global | awk '/inet / {split($2,var,"/"); print var[1]}')
+echo "Server Address: " $ipaddr
+
+cd ~/gstreamer 
+rm playlist.m3u8 2>/dev/null
+rm segment* 2>/dev/null 
+
+#upravi adresu videa ve strance
+rm index.html 2>/dev/null
+#cp .backup_index.html index.html
+webpage=$(cat .backup_index.html)
+echo "${webpage/127.0.0.1/$ipaddr}" > index.html
+
+gst-launch-1.0 -v v4l2src device="/dev/video0" ! videoconvert ! videoscale ! video/x-raw,width=320, height=240 !  x264enc byte-stream=true speed-preset=ultrafast ! video/x-h264,profile=\"high\" ! mpegtsmux ! hlssink playlist-root=http://$ipaddr:8080 location=/home/debian/gstreamer/segment_%05d.ts target-duration=5 max-files=5  &
+
+# spusti http Server
+python3 -m http.server 8080 &
+

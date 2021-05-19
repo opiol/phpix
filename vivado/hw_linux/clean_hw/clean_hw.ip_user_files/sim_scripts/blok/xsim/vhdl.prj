@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/blok/ip/blok_rst_ps7_0_50M_0/sim/blok_rst_ps7_0_50M_0.vhd" \
+"../../../bd/blok/ip/blok_axi_bram_ctrl_0_0/sim/blok_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/blok/ip/blok_axi_bram_ctrl_0_1/sim/blok_axi_bram_ctrl_0_1.vhd" \
+"../../../bd/blok/ip/blok_axi_bram_ctrl_1_0/sim/blok_axi_bram_ctrl_1_0.vhd" \
+
+nosort

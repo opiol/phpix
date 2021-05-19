@@ -1,0 +1,3 @@
+/home/debian/phpix-pitaya-sw/control/build/CMakeFiles/rebuild_cache.dir
+/home/debian/phpix-pitaya-sw/control/build/CMakeFiles/phpix_controller.dir
+/home/debian/phpix-pitaya-sw/control/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,4 @@
+stream=$(ps -ax |grep gst | awk 'NR==1{print $1}')
+server=$(ps -ax | grep http.server | awk 'NR==1{print $1}')
+echo "die!" $stream $server
+kill -9 $stream $server
